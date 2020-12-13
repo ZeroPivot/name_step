@@ -20,7 +20,6 @@ end
 
 finished = false
 steps = BigInt.new(0)
-steps = 0
 name = end_test
 compute_string = String.new
 compute_string = "a" * string_arity(name) #setup the initial strings, initial step set to 0 also
