@@ -6,7 +6,7 @@ goal_string = gets.chomp
 puts
 
     steps = 0
-    begin_string = 'a' * string_arity(end_test)     
+    begin_string = 'a' * string_arity(goal_string)     
     compute_string = string_split(string: goal_string) #array of chars
 
     compute_string.reverse.each_with_index do |value, index|
