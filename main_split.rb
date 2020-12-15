@@ -1,3 +1,5 @@
+require_relative "lib/magicwand"
+
 # Step a name from the arity to the finished string, and get the count of that (sum/
 # formula version)
 # 2020-12-15
@@ -23,10 +25,3 @@ puts
     puts "Steps: #{steps}"
 
 
-def string_arity(string)
-    string.split('').count   
-end
-
-def string_split(string:, split_by: "")
-    string.split(split_by)
-end
