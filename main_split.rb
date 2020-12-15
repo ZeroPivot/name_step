@@ -21,7 +21,8 @@ puts
         steps += (26 ** index) * count_distance #sum formula to calculate steps without a long loop
                 
     end
-    puts "Name/Word: #{goal_string}"
-    puts "Steps: #{steps}"
+    
+puts "Name/Word: #{goal_string}"
+puts "Steps: #{steps}"
 
 
