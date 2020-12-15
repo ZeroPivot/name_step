@@ -4,28 +4,42 @@ print "What is the name? "
 end_test = gets.chomp
 puts
 
-DEBUG = true
-MODULO_DEBUG = 1_000_000
+LETTERS =
+    {
+        "a" => 1, 
+        "b" => 2,
+        "c" => 3,
+        "d" => 4,
+        "e" => 5,
+        "f" => 6,
+        "g" => 7,
+        "h" => 8,
+        "i" => 9,
+        "j" => 10,
+        "k" => 11,
+        "l" => 12,
+        "m" => 13,
+        "n" => 14,
+        "o" => 15,
+        "p" => 16,
+        "q" => 17,
+        "r" => 18,
+        "s" => 19,
+        "t" => 20,
+        "u" => 21,
+        "v" => 22,
+        "w" => 23,
+        "x" => 24,
+        "y" => 25,
+        "z" => 26
+    }.freeze
 
-def string_arity(string)
-    string.split('').count   
+string = end_test
+num = 0
+(0..(string.length)).each do |i|
+    char = "abcdefghijklmnopqrstuvwxyz"[i]
+    num += 26 ** i * LETTERS[char]
+    #num += 26 ** i * (LETTERS[char] - LETTERS['a'])
 end
 
-finished = false
-until (finished)
-    steps ||= 0
-    name ||= end_test
-    compute_string ||= 'a' * string_arity(end_test)  
-  
-    if (compute_string != name)
-        steps += 1
-        compute_string.succ!        
-        
-        if (DEBUG && ((steps % MODULO_DEBUG) == 0))
-            puts "#{compute_string} -> #{steps}"  
-        end
-    else
-       puts "Reached the end; number of steps: #{steps}"
-       finished = true 
-    end
-end
+puts "Total Steps: #{num}"
