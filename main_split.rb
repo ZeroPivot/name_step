@@ -1,4 +1,4 @@
-require_relative "lib/magicwand"
+require_relative "lib/numero_functions"
 
 # Step a name from the arity to the finished string, and get the count of that (sum/
 # formula version)
