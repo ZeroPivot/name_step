@@ -3,7 +3,9 @@ require "big/big_int"
 
 # Step a name from the arity to the finished string, and get the count of that (sum/
 # formula version)
-# 2020-12-15
+# 2020-12-17
+
+## Usage of [integer or string].to_big_i to allow for arbitrarily large numbers.
 
 loop do
   puts
