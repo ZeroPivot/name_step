@@ -24,7 +24,7 @@ loop do
     char = char.succ      
   end
 
-  steps += BigInt.new((26.to_big_i ** index.to_big_i) * count_distance.to_big_i) #sum formula to calculate steps without a long loop
+  steps += (26.to_big_i ** index.to_big_i) * count_distance.to_big_i #sum formula to calculate steps without a long loop
   end
 
   puts "Name/Word: #{goal_string}"
