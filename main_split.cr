@@ -28,6 +28,7 @@ loop do
   end
 
   puts "Name/Word: #{goal_string}"
+  puts "Steps Time: #{Time.unix(steps.to_i64)}"
   puts "Steps: #{steps}"
   puts "StepsSum (using number_split_add_sum(steps)): #{number_split_add_sum(steps)}"
   puts "NumSum (using LETTERS_HASH/goal_string): #{num_letters(goal_string).sum}"
