@@ -1,14 +1,16 @@
-require_relative "lib/numero_functions"
+# frozen_string_literal: true
+
+require_relative 'lib/numero_functions'
 
 # Step a name from the arity to the finished string, and get the count of that (sum/
 # formula version)
 # 2020-12-15
-print "What is the first name? "
+print 'What is the first name? '
 goal_string = gets.chomp
 puts
 puts
 
-print "What is the second name? "
+print 'What is the second name? '
 goal_string2 = gets.chomp
 puts
 puts
