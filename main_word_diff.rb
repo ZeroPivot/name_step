@@ -15,6 +15,7 @@ goal_string2 = gets.chomp
 puts
 puts
 
+
 steps_first = compute_word_steps!(goal_string: goal_string)
 steps_second = compute_word_steps!(goal_string: goal_string2)
 puts "Names/Words: #{goal_string} vs #{goal_string2}"

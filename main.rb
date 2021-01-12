@@ -13,6 +13,7 @@ def string_arity(string)
   string.split('').count
 end
 
+
 finished = false
 until finished
   steps ||= 0
@@ -27,5 +28,7 @@ until finished
   else
     puts "Reached the end; number of steps: #{steps}"
     finished = true
+    
+    
   end
 end

@@ -15,13 +15,6 @@ loop do
   puts
 
   steps = 0
-  begin_string = "a" * string_arity(goal_string)
-
-def test
-  puts "lol"
-  
-
-end
 
 
   compute_string = string_split(string: goal_string) #array of chars
