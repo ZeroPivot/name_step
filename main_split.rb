@@ -17,6 +17,8 @@ loop do
   steps = 0
 
 
+
+
   compute_string = string_split(string: goal_string) #array of chars
 
   compute_string.reverse.each_with_index do |value, index|
@@ -31,6 +33,9 @@ loop do
 
   puts "Name/Word: #{goal_string}"
   puts "Steps: #{steps}"
+
+
+
 
   puts "StepsTime: #{Time.at(steps)}"
   puts "StepsSum (using number_split_add_sum(steps)): #{number_split_add_sum(steps)}"
