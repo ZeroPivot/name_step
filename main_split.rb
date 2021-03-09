@@ -28,7 +28,7 @@ loop do
       count_distance += 1
       char.succ!
     end
-    steps += (26 ** index) * count_distance #sum formula to calculate steps without a long loop
+    steps += (26**index) * count_distance #sum formula to calculate steps without a long loop
   end
 
   puts "Name/Word: #{goal_string}"
